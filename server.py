@@ -33,21 +33,27 @@ def messaging_events(payload):
     else:
       yield event["sender"]["id"], "I can't echo this"
 
-def send_message(token, recipient, in_text):
+def send_message(token, recipient, inp):
   """Send the message text to recipient with id recipient.
   """
-  out_text = generate_response(in_text)
+  out = generate_response(inp)
   r = requests.post("https://graph.facebook.com/v2.6/me/messages",
     params={"access_token": token},
     data=json.dumps({
       "recipient": {"id": recipient},
-      "message": {"text": out_text.decode('unicode_escape')}
+      "message": {"text": out.decode('unicode_escape')}
     }),
     headers={'Content-type': 'application/json'})
 
-def generate_response(in_text):
-    out_text = in_text
-    return out_text
+def generate_response(inp):
+    if inp = 'hi':
+        out = 'hello!'
+    elif inp = 'what\'s up':
+        out = 'not much'
+    else:
+        out = inp
+
+    return out
 
 if __name__ == '__main__':
   app.run()
