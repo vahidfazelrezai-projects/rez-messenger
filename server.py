@@ -46,9 +46,9 @@ def send_message(token, recipient, inp):
     headers={'Content-type': 'application/json'})
 
 def generate_response(inp):
-    if inp = 'hi':
+    if inp == 'hi':
         out = 'hello!'
-    elif inp = 'what\'s up':
+    elif inp == 'what\'s up':
         out = 'not much'
     else:
         out = inp
