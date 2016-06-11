@@ -1,9 +1,11 @@
 from flask import Flask, request
 import json
 import requests
-from secret import PAT
+import os
 
 app = Flask(__name__)
+
+PAT = os.environ['PAT']
 
 @app.route('/', methods=['GET'])
 def handle_verification():
