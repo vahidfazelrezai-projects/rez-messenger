@@ -1,4 +1,4 @@
-This privacy policy is for and governs the privacy of its users who choose to use it. This bot and its owners take a proactive approach to user privacy and ensure the necessary steps are taken to protect the privacy of its users throughout their experience.
+This privacy policy is for rez and governs the privacy of its users who choose to use it. This bot and its owners take a proactive approach to user privacy and ensure the necessary steps are taken to protect the privacy of its users throughout their experience.
 
 Users contacting rez and/or its owners do so at their own discretion and provide any such personal details requested at their own risk. Personal information is kept private and not shared with anyone outside the messaging client and the app backend. No information is made available or used in any way outside the context of the messaging client and the app backend.
 
