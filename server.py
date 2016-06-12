@@ -2,6 +2,7 @@ from flask import Flask, request
 import json
 import requests
 import os
+import rez
 
 app = Flask(__name__)
 
@@ -46,14 +47,7 @@ def send_message(token, recipient, inp):
     headers={'Content-type': 'application/json'})
 
 def generate_response(inp):
-    if inp == 'hi':
-        out = 'hello!'
-    elif inp == 'what\'s up':
-        out = 'not much'
-    else:
-        out = inp
-
-    return out
+    return rez.call(inp)
 
 if __name__ == '__main__':
   app.run()
