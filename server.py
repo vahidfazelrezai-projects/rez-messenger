@@ -2,7 +2,7 @@ from flask import Flask, request
 import json
 import requests
 import os
-import rez
+from rez import rez
 
 app = Flask(__name__)
 
